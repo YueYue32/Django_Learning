@@ -21,7 +21,7 @@
 ![image](https://github.com/YueYue32/Django_Learning/blob/main/%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88/4.png)
 
 
-# 
+##
 
 __init__ .py：Python 文件，可以將所在目錄內導入Python文件，告訴Python這資料夾是個套件
 
