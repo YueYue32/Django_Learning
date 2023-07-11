@@ -1,10 +1,12 @@
 # 啟動網頁伺服器進行測試
 
 進入專案目錄 myweb
+
     cd myweb
 
   
 啟動 web server
+
     py manage.py runserver 
 
   
