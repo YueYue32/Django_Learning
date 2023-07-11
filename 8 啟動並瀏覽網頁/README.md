@@ -26,7 +26,23 @@ path('', views.home)
 
 網址後面什麼都不加 ，對應到views.py裡面的 “home”功能
 
+<br>
 
 “home”功能(在myapp\views.py)：
 
 ![image](https://github.com/YueYue32/Django_Learning/blob/main/8%20%E5%95%9F%E5%8B%95%E4%B8%A6%E7%80%8F%E8%A6%BD%E7%B6%B2%E9%A0%81/3.png)
+
+
+#
+
+
+path('hi/<username>/', views.hiname), # 傳遞字串參數 username
+
+傳遞字串參數 username 是什麼?
+
+<br>
+
+
+來看看views.py中，”hiname”功能的內容
+![image](https://github.com/YueYue32/Django_Learning/blob/main/8%20%E5%95%9F%E5%8B%95%E4%B8%A6%E7%80%8F%E8%A6%BD%E7%B6%B2%E9%A0%81/5.png)
+
