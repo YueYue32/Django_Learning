@@ -9,4 +9,9 @@
 
 #
 
+執行後，在”django_test”資料夾中會產生一個”myweb”資料夾(專案目錄)
+
+內含一個同名的 myweb( 套件目錄)、manage.py檔案
+
+
 
