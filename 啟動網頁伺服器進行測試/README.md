@@ -36,17 +36,17 @@ manage.py：用來管理整個Django專案，像是啟動本地端伺服器、�
 
 例如：
 
-  py manage.py -h
-  py manage.py runserver -h
+    py manage.py -h
+    py manage.py runserver -h
 
 注意：
 
-  py manage.py runserver ，為啟動Web 服務的方式，僅用於開發專案，千萬不要在正式上線的場合中使用。
+    py manage.py runserver ，為啟動Web 服務的方式，僅用於開發專案，千萬不要在正式上線的場合中使用。
 
-  預設使用的 port 為 8000，若要改變 port 號可參考範例：py manage.py runserver XXXX (XXXX為port 號)
+    預設使用的 port 為 8000，若要改變 port 號可參考範例：py manage.py runserver XXXX (XXXX為port 號)
 
-  此測試執行後，會在專案根目錄下產生一個 db.sqlite3 的資料庫檔案，但因為尚未產生其中的資料表，因此訊息中會出現 18 個未處理資料庫遷移警告(You have 18 unapplied migration(s))
-  在此請忽略，後續說明資料庫時會加以解釋。
+    此測試執行後，會在專案根目錄下產生一個 db.sqlite3 的資料庫檔案，但因為尚未產生其中的資料表，因此訊息中會出現 18 個未處理資料庫遷移警告(You have 18 unapplied migration(s))
+    在此請忽略，後續說明資料庫時會加以解釋。
 
 
 因為環境設定檔中預設的資料庫是 sqlite3，所以會在專案根目錄下產生 db.sqlite3。
