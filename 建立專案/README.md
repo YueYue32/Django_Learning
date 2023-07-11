@@ -4,7 +4,7 @@
 
 建立第一個 Django 專案 : myweb
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88/Untitled.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/%E5%BB%BA%E7%AB%8B%E5%B0%88%E6%A1%88/1.png)
 
 
 #
