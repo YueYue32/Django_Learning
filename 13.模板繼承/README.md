@@ -8,7 +8,7 @@
 
 母版設計：
 
-C:\Users\*****\django_test\myweb\static\css\style.css
+C:\Users\ *****\django_test\myweb\static\css\style.css
 
 覆蓋掉之前的內容
 
@@ -41,7 +41,7 @@ C:\Users\*****\django_test\myweb\static\css\style.css
 #
 
 
-C:\Users\*****\django_test\myweb\templates\base.html
+C:\Users\ *****\django_test\myweb\templates\base.html
 
 title、main作為子網頁繼承之用
 
@@ -74,7 +74,7 @@ title、main作為子網頁繼承之用
 #
 
 
-C:\Users\*****\django_test\myweb\templates\index.html
+C:\Users\ *****\django_test\myweb\templates\index.html
 
 
     {% extends 'base.html'%}
