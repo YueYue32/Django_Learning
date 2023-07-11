@@ -95,6 +95,8 @@ path('hello/', views.hello_view)
 ![image](https://github.com/YueYue32/Django_Learning/blob/main/8%20%E5%95%9F%E5%8B%95%E4%B8%A6%E7%80%8F%E8%A6%BD%E7%B6%B2%E9%A0%81/9.png)
 
 
+<br>
+
 
 hello_view功能內容較多，來一個個分析
 
