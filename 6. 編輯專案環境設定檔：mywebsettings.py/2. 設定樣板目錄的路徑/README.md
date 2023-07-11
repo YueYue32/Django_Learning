@@ -3,7 +3,9 @@
 
 在settings.py中，對於該專案的基本路徑已經有預設值
 
-    BASE_DIR = os.path.dirname(os.path.dirname(__file__))  
+    BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+<br>
 
 
 
