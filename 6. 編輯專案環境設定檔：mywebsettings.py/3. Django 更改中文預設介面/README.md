@@ -35,6 +35,7 @@ C:\Users\226083\django_test\myweb\myweb\setting.py
         py manage.py runserver 
 
 
+<br>
 以瀏覽器開啟 http://127.0.0.1:8000/
 
 將出現以下畫面，可按 Ctrl + C 終止執行(在Anaconda prompt裡面按下終止指令)
