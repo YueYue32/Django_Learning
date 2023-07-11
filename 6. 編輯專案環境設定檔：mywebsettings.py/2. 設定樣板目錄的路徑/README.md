@@ -39,6 +39,5 @@ BASE_DIR 指的是 最上層的專案目錄 (”myweb”資料夾)
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    },
-]
+    },]
 
