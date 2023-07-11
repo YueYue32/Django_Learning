@@ -167,3 +167,22 @@ render()的第3個參數 locals()，可將所有區域變數轉為字典
 http://127.0.0.1:8000/
 
 變成設計出來的版型
+
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/13.%E6%A8%A1%E6%9D%BF%E7%B9%BC%E6%89%BF/1.png)
+
+
+#
+
+
+補充：
+
+<footer> 頁尾
+
+Footer 常駐於每個網頁底部，在主體內容下方，他就像是一個導航系統，他能夠短促的告訴使用者網站提供的服務
+
+類似這個，很多網頁底下會有的功能、服務、選項
+
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/13.%E6%A8%A1%E6%9D%BF%E7%B9%BC%E6%89%BF/2.png)
+
