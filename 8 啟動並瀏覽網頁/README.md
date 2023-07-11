@@ -89,7 +89,95 @@ ath('age/int:year/', views.age), # 傳遞數值參數 year
 #
 
 
+path('hello/', views.hello_view)
+
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/8%20%E5%95%9F%E5%8B%95%E4%B8%A6%E7%80%8F%E8%A6%BD%E7%B6%B2%E9%A0%81/9.png)
 
 
 
+hello_view功能內容較多，來一個個分析
 
+
+        def hello_view(request):
+        
+        		# fourSeason 為數值1~4
+            fourSeason = range(1, 5)
+        
+        		# p1、p2、p3 分別是3個dictionary資料
+            p1 = {"name": "Amy", "phone": "0912-345678", "age": 20}
+            p2 = {"name": "Jack", "phone": "0937-123456", "age": 25}
+            p3 = {"name": "Nacy", "phone": "0958-654321", "age": 17}
+        
+        		# 用個變數"persons"，儲存上面3筆資料，整體變成list型態
+            persons = [p1, p2, p3]
+        
+        
+        		# 補充 render()函式：用於封裝整體網頁內會需要的參數，其中的"request"是必加的
+        		# request, 'hello_django.html'，表示取得來源名稱是'hello_django.html'的檔案
+        		# 上述檔案放置路徑為 "C:\Users\226083\django_test\myweb\templates"
+        
+        		# 回傳
+            return render(request, 'hello_django.html', {
+                'title': "樣板使用",
+                'data': "Hello Django!",
+                'seasons': fourSeason,
+                'persons': persons,
+                'now': datetime.now()
+            })
+
+
+<br>
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{{title}}</title>
+            {% load static %}
+            <link href="{% static 'css/style.css'%}" rel="stylesheet">
+        </head>
+        <body>
+            <h1>{{data}}</h1>
+            <h2>季統計</h2>
+            {% if seasons %}
+                <ul>
+                {% for i in seasons %}
+                    <li>{{i}}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>沒有資料</p>
+            {% endif %}
+            <h2>人員清單</h2>
+            {% if persons %}
+            <table border="1">
+        				<tr>
+        				<!--這層td可以換成tr-->
+                    <td>name</td>
+                    <td>phone</td>
+                    <td>age</td>
+                </tr>
+            {% for person in persons %}
+                <tr>
+                    <td>{{person.name}}</td>
+                    <td>{{person.phone}}</td>
+                    <td>{{person.age}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+            {% else %}
+                <p>沒有資料</p>
+            {% endif %}
+            <img src="{% static 'images/py-django.png' %}" alt="python/django">
+            <p>現在時刻：<span class="info">{{now}}</span></p>
+        </body>
+        </html>
+
+
+<br>
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/8%20%E5%95%9F%E5%8B%95%E4%B8%A6%E7%80%8F%E8%A6%BD%E7%B6%B2%E9%A0%81/10.png)
