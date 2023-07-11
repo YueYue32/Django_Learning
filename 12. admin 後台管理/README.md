@@ -70,6 +70,9 @@ Django 會自動建立管理的後台
 回到剛剛開啟的 admin 頁面，按下 F5 重新載入頁面，會看到增加了的應用程式模型
 
 
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/3.png)
+
+
 #
 
 
@@ -77,7 +80,7 @@ Django 會自動建立管理的後台
 
 按下 Students 的 “+新增”
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/3.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/4.png)
 
 
 #
@@ -85,14 +88,14 @@ Django 會自動建立管理的後台
 
 嘗試儲存一筆資料
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/4.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/5.png)
 
 
 #
 
 儲存後，會跳到可異動資料的畫面
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/5.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/6.png)
 
 
 #
@@ -125,7 +128,7 @@ admin 頁面顯示多個欄位
 
 回到剛剛開啟的 admin 頁面，按下 F5 重新載入頁面，會看到 admin 頁面顯示了多個欄位、搜尋框以及過濾器
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/6.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/7.png)
 
 
 #
@@ -177,7 +180,7 @@ list_filter
 search_fields
 搜尋功能
 
-![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/7.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/12.%20admin%20%E5%BE%8C%E5%8F%B0%E7%AE%A1%E7%90%86/8.png)
 
 
 在這個框框裡面輸入搜尋文字
