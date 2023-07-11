@@ -7,7 +7,7 @@ C:\Users\226083\django_test\myweb\myweb\setting.py
 
 第108行：時區設定
 
-![image]https://github.com/YueYue32/Django_Learning/blob/main/6.%20%E7%B7%A8%E8%BC%AF%E5%B0%88%E6%A1%88%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E6%AA%94%EF%BC%9Amywebsettings.py/3.%20Django%20%E6%9B%B4%E6%94%B9%E4%B8%AD%E6%96%87%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2/4.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/6.%20%E7%B7%A8%E8%BC%AF%E5%B0%88%E6%A1%88%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E6%AA%94%EF%BC%9Amywebsettings.py/3.%20Django%20%E6%9B%B4%E6%94%B9%E4%B8%AD%E6%96%87%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2/4.png)
 
 
 <br>
@@ -18,5 +18,5 @@ C:\Users\226083\django_test\myweb\myweb\setting.py
     #修改時區為<亞洲/台北>
     TIME_ZONE = 'Asia/Taipei'
 
-![image]https://github.com/YueYue32/Django_Learning/blob/main/6.%20%E7%B7%A8%E8%BC%AF%E5%B0%88%E6%A1%88%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E6%AA%94%EF%BC%9Amywebsettings.py/3.%20Django%20%E6%9B%B4%E6%94%B9%E4%B8%AD%E6%96%87%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2/5.png)
+![image](https://github.com/YueYue32/Django_Learning/blob/main/6.%20%E7%B7%A8%E8%BC%AF%E5%B0%88%E6%A1%88%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E6%AA%94%EF%BC%9Amywebsettings.py/3.%20Django%20%E6%9B%B4%E6%94%B9%E4%B8%AD%E6%96%87%E9%A0%90%E8%A8%AD%E4%BB%8B%E9%9D%A2/5.png)
 
