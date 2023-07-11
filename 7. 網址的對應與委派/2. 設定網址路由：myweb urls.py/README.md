@@ -1,5 +1,5 @@
 # 設定網址路由：myweb/urls.py
-
+<br>
 
     from django.contrib import admin
     from django.urls import path,include
@@ -14,3 +14,8 @@
         # path(r'^admin/', admin.site.urls),
         # path(r'^$', sayhello),
     ]
+
+
+#
+
+http://127.0.0.1:8000/
