@@ -269,3 +269,112 @@ all 則否(上面有說過)
 ![image](https://github.com/YueYue32/Django_Learning/blob/main/11.%20API%20%E6%B8%AC%E8%A9%A6/5.png)
 
 
+#
+
+
+        # 刪除 
+        # 注意 執行刪除這個動作，會直接作用到資料庫上，不需要執行save()
+        
+        >>> s1.delete()
+        (1, {'myapp.student': 1})
+
+
+#
+
+
+樣板測試 API
+
+新增 myweb\urls.py 以下第 26 與 27 行程式碼
+
+(寫入網址路徑)
+
+
+        from django.contrib import admin
+        from django.urls import path
+        from myapp import views
+        
+        urlpatterns = [
+            path('admin/', admin.site.urls),
+            path('', views.home),
+            path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
+            path('age/<int:year>/', views.age),        # 傳遞數值參數 year
+            path('hello/', views.hello_view),
+            path('getName/<username>/', views.getOneByName), # 傳遞字串參數 username
+            path('getAll/', views.getAll),
+            # path(r'^admin/', admin.site.urls),
+            # path(r'^$', sayhello),
+        ]
+
+
+
+<br>
+
+
+新增 myapp\[views.py](http://views.py/) 以下第 4-6 行程式碼
+
+注意：
+
+from myapp.models import student
+
+後續會操作到資料庫中的”student”數據庫(student.objects.get())
+
+所以必須加入這行，不然無法抓到該數據庫內的資料
+
+        from myapp.models import student
+        from django.http import Http404
+        from django.contrib import auth
+
+
+<br>
+
+還有以下第 31 行開始之程式碼
+
+        def getOneByName(request, username):
+            title = "顯示一筆資料"
+            # unit = get_object_or_404(student, cName=username)
+            try:
+                unit = student.objects.get(cName=username)
+            except student.DoesNotExist:
+                raise Http404("查無此學生")
+            except:
+                raise Http404("讀取錯誤")
+            return render(request, 'listone.html', locals() )
+        
+        
+        def getAll(request):
+            title = "顯示全部資料"
+            # students = get_list_or_404(student)
+            try:
+                students = student.objects.all()
+            except student.DoesNotExist:
+                raise Http404("查無學生資料")
+            except:
+                raise Http404("讀取錯誤")
+            return render(request, 'listall.html', locals() )
+
+
+#
+
+啟動伺服器測試 API
+
+        (django) C:\Users\******\django_test\myweb>py manage.py runserver
+
+
+<br>
+
+
+打開瀏覽器，輸入網址：http://127.0.0.1:8000/getName/Kevin/，出現畫面如下：
+
+(”Kevin”這筆資料之前沒刪掉)
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/11.%20API%20%E6%B8%AC%E8%A9%A6/6.png)
+
+
+<br>
+
+
+打開瀏覽器，輸入網址：http://127.0.0.1:8000/getAll/，出現畫面如下：
+
+(另一筆資料是後來建立的，用來測試是否能查到全部資料)
+
+![image](https://github.com/YueYue32/Django_Learning/blob/main/11.%20API%20%E6%B8%AC%E8%A9%A6/7.png)
