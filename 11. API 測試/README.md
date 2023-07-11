@@ -310,11 +310,13 @@ all 則否(上面有說過)
 <br>
 
 
-新增 myapp\[views.py](http://views.py/) 以下第 4-6 行程式碼
+新增 myapp\views.py 以下第 4-6 行程式碼
 
 注意：
 
-from myapp.models import student
+
+        from myapp.models import student
+
 
 後續會操作到資料庫中的”student”數據庫(student.objects.get())
 
